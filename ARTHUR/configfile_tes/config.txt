@@ -3,19 +3,19 @@ CHARACTER SETTINGS:
 player-name = null; 
 // change "null" to your character's name.
 
-player-age = 16;
+player-age = null;
 // change "null" to your character's age.
 
-player-background = triste;
+player-background = null;
 // change "null" to your character's background.
 
-player-strength = 1; 
+player-strength = null; 
 // change null to your character's strenght. 1 - 10
 
-player-intelligence = 10; 
+player-intelligence = null; 
 // change null to your character's intelligence. 1 - 10
 
-player-magic = 9; 
+player-magic = null; 
 // change null to your character's magic. 1 - 10
 
 GAME SETTINGS
