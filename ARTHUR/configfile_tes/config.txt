@@ -1,0 +1,26 @@
+CHARACTER SETTINGS:
+
+player-name = null; 
+// change "null" to your character's name.
+
+player-age = 16;
+// change "null" to your character's age.
+
+player-background = triste;
+// change "null" to your character's background.
+
+player-strength = 1; 
+// change null to your character's strenght. 1 - 10
+
+player-intelligence = 10; 
+// change null to your character's intelligence. 1 - 10
+
+player-magic = 9; 
+// change null to your character's magic. 1 - 10
+
+GAME SETTINGS
+
+online-mode = true;
+game-id = standardId;
+game-ip = standardIp;
+level-seed = null;
