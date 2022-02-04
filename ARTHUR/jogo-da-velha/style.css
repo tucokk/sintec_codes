@@ -1,0 +1,92 @@
+body {
+    background-color: rgb(174, 240, 174);
+}
+table {
+    border: 5px solid black;
+    font-size: 100px;
+    font-family: arial;
+    text-align: center;
+    margin: auto;
+    margin-top: -20px;
+    border-collapse: collapse;
+    width: 470px;
+    height: 470px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.322);
+    background-color: white;
+}
+table td {
+    border: 5px solid black;
+    width: 140px;
+    height: 140px;
+
+}
+.configurador {
+    margin: auto;
+}
+
+#section1 {
+    text-align: center;
+    padding: 23px;
+    color: black;
+    font-size: 25px;
+    font-family: arial;
+    font-weight: bold;
+}
+#section1 > input {
+    padding-top: 8px;
+    font-size: 16px;
+}
+#player2 {
+    padding-top: 8px;
+    font-size: 16px;
+    text-align: right;
+}
+span {
+    padding-top: 10px;
+    vertical-align: 0px;
+    margin-right: 3px;
+}
+
+button {
+    padding: 14px;
+    margin-top: 10px;
+    background-color: rgb(149, 190, 149);
+    border-radius: 10px;
+    text-decoration: none;
+    border: none;
+    color: black;
+    font-weight: bold;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.438);
+}
+button:hover {
+    padding: 14px;
+    margin-top: 10px;
+    background-color: rgb(104, 138, 104);
+    border-radius: 10px;
+    text-decoration: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.msg, .time{
+    color: rgb(22, 77, 31);
+    font-family: arial;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+
+#quadrado {
+    animation: blink 1s steps(1, end) infinite;
+    background-color: yellow;
+    height: 15px;
+    width: 15px;
+    margin: auto;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    text-align: center;
+}

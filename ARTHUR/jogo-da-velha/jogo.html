@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <p class="msg">Jogo não iniciado! <p class="time"></p></p>
+    <table>
+        <tr>
+            <td id="a1"></td>
+            <td id="a2"></td>
+            <td id="a3"></td>
+        </tr>
+        <tr>
+            <td id="a4"></td>
+            <td id="a5"></td>
+            <td id="a6"></td>
+        </tr>
+        <tr>
+            <td id="a7"></td>
+            <td id="a8"></td>
+            <td id="a9"></td>
+        </tr>
+    </table>
+    <div class="configurator">
+        <div id="section1">
+            <span>X</span> <input type="text" id="player1" placeholder="Nome Jogador I">
+            <input type="text" id="player2" placeholder="Nome Jogador II">
+            <span>O</span>
+            <br>
+            <button id="starting_game">Iniciar jogo</button>
+            <button id="reloading_game">Jogar novamente</button>
+        </div>
+    </div>
+
+</body>
+</html>
