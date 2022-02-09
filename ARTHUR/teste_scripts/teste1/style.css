@@ -14,7 +14,7 @@ div#div1 {
     font-weight: bolder;
     margin-top: 150px;
     width: 60%;
-    margin: 150px auto;
+    margin: 140px auto;
 }
 
 div#div2 {
@@ -58,5 +58,14 @@ div#div1 > button:hover {
     transition-duration: 0.5s;
     cursor: pointer;
     border-radius: 30px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    font-family: arial;
+    background-color: rgba(0, 0, 0, 0.219);
+    padding: 7.5px;
+    font-weight: bold;
 }
 
