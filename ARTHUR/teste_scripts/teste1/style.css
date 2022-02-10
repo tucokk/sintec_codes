@@ -60,12 +60,3 @@ div#div1 > button:hover {
     border-radius: 30px;
 }
 
-footer {
-    width: 100%;
-    text-align: center;
-    font-family: arial;
-    background-color: rgba(0, 0, 0, 0.219);
-    padding: 7.5px;
-    font-weight: bold;
-}
-
