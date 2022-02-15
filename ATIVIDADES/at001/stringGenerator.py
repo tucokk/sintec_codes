@@ -2,15 +2,15 @@ import random
 import string
 
 with open('doc.txt', 'w') as file:
-    numberStrings = 30
-    lengthString = 20
+    numberStrings = 1
+    lengthString = 30
 
     counter = 0
     
 
     for x in range(numberStrings):
-        for y in range(1, 31):
-            if counter == 30:
+        for y in range(1, 401):
+            if counter == 400:
                 break
             stringGenerator = (''.join(random.choice(string.ascii_letters + string.digits) for _ in range(lengthString)))
             if counter >= 1:
