@@ -6,7 +6,7 @@ with open('doc.txt', 'w') as file:
     lengthString = 30
 
     counter = 0
-    
+    string.digits = '13456789'
 
     for x in range(numberStrings):
         for y in range(1, 401):
@@ -22,5 +22,3 @@ with open('doc.txt', 'w') as file:
 
     print('ready')
     exit()
-
-
