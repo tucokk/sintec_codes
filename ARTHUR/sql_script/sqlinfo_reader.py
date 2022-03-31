@@ -2,7 +2,7 @@ import configparser as cpa
 
 def readIniFile():
     config = cpa.ConfigParser()
-    config.read('C:/Users/arthu/Desktop/testescript/script_config.ini')
+    config.read(r'C:/configfile/script_config.ini')
     SERVER_NAME = config['SQL_INFO']['server']
     DATABASE_NAME = config['SQL_INFO']['database']
     UID = config['SQL_INFO']['uid']

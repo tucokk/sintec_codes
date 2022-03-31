@@ -3,6 +3,8 @@ import time
 import sqlinfo_generator as generator
 import sqlinfo_reader as reader
 import os
+import pandas as pd
+import openpyxl
 
 # setting the config.ini data as the connection fields (server, database, login, password)
 class Connection:
@@ -12,16 +14,16 @@ class Connection:
         self.uid = UID
         self.psw = PSW
         self.driver = DRIVER
-        self.connection_string =f'''
-    DRIVER={{{self.driver}}};
-    SERVER={self.server};
-    DATABASE={self.database};
-    Trust_Connection=yes;
-    uid={self.uid};
-    pws={self.psw};
+        self.connection_string = f'''
+DRIVER={{{self.driver}}};
+SERVER={self.server};
+DATABASE={self.database};
+Trust_Connection=yes;
+UID={self.uid};
+PWD={self.psw};
                     '''
-        Connection.cursor = 'none'
-        print(f'Connection data informed.\n {self.connection_string}')
+        Connection.connection = 'none'
+        print(f'\nConnection data informed.\n {self.connection_string}')
 
     #starting the connection process. limit of 3x is setted 
     def connection_database(self):
@@ -31,10 +33,10 @@ class Connection:
             try:
                 #connection line
                 connection_server = odbc.connect(self.connection_string)
-                Connection.cursor = connection_server
-                print(f'Connection complete successfuly.\nSys_status: {connection_server}')  
-                return Connection.cursor
-            #any error during the connection fill fall over here, giving the reconnect option
+                Connection.connection = connection_server
+                print(f'Connection complete successfuly.\nSys_status: connected\n\n')  
+                return connection
+                #any error during the connection fill fall over here, giving the reconnect option
             except:
                 if cont != 5:
                     try_again = input('Something went wrong. Try again? y/n\n')
@@ -48,27 +50,43 @@ class Connection:
                     time.sleep(2)
                     exit()
 
+
 class Querry(Connection):
     def __init__(self):
-        self.cursor = Connection.cursor
-    
+        self.connection = Connection.connection
     def querry(self):
-        cursor = self.cursor
-        cursor.execute('''
-    SELECT
-        *
-    FROM
-        aluno
-        ''')
+        tabels = ['aluno', 'banco']
+        print('Generating file...')
+        for i in range(len(tabels)):
+            query = (f'''
+        SELECT
+            top 100 *
+        FROM
+            {tabels[i]} 
+        
+            ''')
+            
+            pd.set_option('display.max_rows', None)
+            table = pd.read_sql_query(query, self.connection)
+            with open(r'C:/configfile/script_result.txt', 'a') as sqlinfo:
+                config = f'\n\n{table}'
+                tabels_formated = tabels[i].replace(',', '')
+                sqlinfo.write(f'\n\n\nDatabase: {tabels_formated}, \nResult:\n{config}')
+            table.to_csv(r'C:/configfile/script_result.csv')
+            table.to_excel(r'C:/configfile/script_result.xlsx')
+
+        print('\nSelect complete successfuly. Check: \nC:/configfile/script_result.txt')
+    
 #reading .ini file or creating it
-file_exist = os.path.isfile('C:/Users/arthu/Desktop/testescript/script_config.ini')
+file_exist = os.path.isfile(r'C:/configfile/script_config.ini')
 if file_exist == True:
     pass
 else:
     generator.generateIniFile()
 
+
 #calling the start of connecting process
-connection = Connection(reader.readIniFile()[4],reader.readIniFile()[0], reader.readIniFile()[1], reader.readIniFile()[2], reader.readIniFile()[3], )
+connection = Connection(reader.eadIniFilre()[4],reader.readIniFile()[0], reader.readIniFile()[1], reader.readIniFile()[2], reader.readIniFile()[3])
 connection_data = connection.connection_database()
 querry = Querry()
 executing_querry = querry.querry()
