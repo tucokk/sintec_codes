@@ -36,7 +36,7 @@ PWD={self.psw};
                 Connection.connection = connection_server
                 print(f'Connection complete successfuly.\nSys_status: connected\n\n')  
                 return connection
-                #any error during the connection fill fall over here, giving the reconnect option
+            #any error during the connection fill fall over here, giving the reconnect option
             except:
                 if cont != 5:
                     try_again = input('Something went wrong. Try again? y/n\n')
@@ -51,16 +51,17 @@ PWD={self.psw};
                     exit()
 
 
+
 class Querry(Connection):
     def __init__(self):
         self.connection = Connection.connection
     def querry(self):
-        tabels = ['aluno', 'banco']
+        tabels = ['aluno']
         print('Generating file...')
         for i in range(len(tabels)):
             query = (f'''
         SELECT
-            top 100 *
+            *
         FROM
             {tabels[i]} 
         
@@ -68,17 +69,20 @@ class Querry(Connection):
             
             pd.set_option('display.max_rows', None)
             table = pd.read_sql_query(query, self.connection)
-            with open(r'C:/configfile/script_result.txt', 'a') as sqlinfo:
+            directory_exist = os.path.exists(r'C:/Users/arthu/Documents/scripts/sql_script/result')
+            if directory_exist == False:
+                os.makedirs('./result')
+            with open(r'C:/Users/arthu/Documents/scripts/sql_script/result/data.txt', 'a') as sqlinfo:
                 config = f'\n\n{table}'
                 tabels_formated = tabels[i].replace(',', '')
                 sqlinfo.write(f'\n\n\nDatabase: {tabels_formated}, \nResult:\n{config}')
-            table.to_csv(r'C:/configfile/script_result.csv')
-            table.to_excel(r'C:/configfile/script_result.xlsx')
+            table.to_csv(r'C:/Users/arthu/Documents/scripts/sql_script/result/data.csv')
+            table.to_excel(r'C:/Users/arthu/Documents/scripts/sql_script/result/data.xlsx')
 
         print('\nSelect complete successfuly. Check: \nC:/configfile/script_result.txt')
     
 #reading .ini file or creating it
-file_exist = os.path.isfile(r'C:/configfile/script_config.ini')
+file_exist = os.path.isfile(r'C:/Users/arthu/Documents/scripts/sql_script/config/sql_config.ini')
 if file_exist == True:
     pass
 else:
@@ -86,7 +90,7 @@ else:
 
 
 #calling the start of connecting process
-connection = Connection(reader.eadIniFilre()[4],reader.readIniFile()[0], reader.readIniFile()[1], reader.readIniFile()[2], reader.readIniFile()[3])
+connection = Connection(reader.readIniFile()[4],reader.readIniFile()[0], reader.readIniFile()[1], reader.readIniFile()[2], reader.readIniFile()[3])
 connection_data = connection.connection_database()
 querry = Querry()
 executing_querry = querry.querry()

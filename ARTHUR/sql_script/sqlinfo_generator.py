@@ -1,5 +1,5 @@
 import configparser as cpa
-
+import os
 def generateIniFile():
     config=cpa.ConfigParser()
     config.add_section('SQL_INFO')
@@ -10,7 +10,8 @@ def generateIniFile():
     config.set('SQL_INFO', 'uid', '')
     config.set('SQL_INFO', 'pws', '')
 
-    with open(r'C:/configfile/script_config.ini', 'w') as sqlinfo:
+    os.makedirs('./config')
+    with open(r'C:/Users/arthu/Documents/scripts/sql_script/config/sql_config.ini', 'w') as sqlinfo:
         config.write(sqlinfo)
         print('sql_config.ini successfuly generated.\nRun the program again.')
         exit()
