@@ -1,0 +1,1 @@
+2022-04-04 16:50:29.052066: ('42000', '[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]Não é possível abrir o banco de dados "banco_teste1, banco_teste2" solicitado pelo logon. Falha de logon.')
