@@ -1,0 +1,1 @@
+2022-04-04 04:19:26.923666: ('IM002', '[IM002] [Microsoft][ODBC Driver Manager] Nome da fonte de dados não encontrado e nenhum driver padrão especificado')
