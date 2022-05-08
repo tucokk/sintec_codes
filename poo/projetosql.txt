@@ -1,0 +1,32 @@
+CREATE TABLE colaborador (
+	id_colaborador INT IDENTITY (1, 1) NOT NULL PRIMARY KEY,
+	nome VARCHAR (50) NOT NULL PRIMARY KEY,
+	cpf VARCHAR (15) NOT NULL PRIMARY KEY,
+	email VARCHAR (50),
+	telefone VARCHAR(25) NOT NULL,
+	sexo VARCHAR (1) NOT NULL,
+	data_nascimento DATE,
+	nacionalidade VARCHAR (20) NOT NULL
+)
+
+CREATE TABLE conta (
+	id_colaborador INT FOREIGN KEY REFERENCES colaborador (id_colaborador),
+	numero_conta INT IDENTITY (400, 20) NOT NULL,
+	status_conta VARCHAR (1) NOT NULL,
+	tipo_conta VARCHAR (10) NOT NULL,
+	saldo MONEY NOT NULL
+)
+
+select b.nome, b.cpf, a.*
+from conta a
+join colaborador b on b.id_colaborador = a.id_colaborador
+
+delete from colaborador where id_colaborador = 1
+delete from conta where id_colaborador = 1
+
+select * from colaborador
+select b.nome, b.cpf, a.* from conta a join colaborador b on b.id_colaborador = a.id_colaborador
+
+INSERT INTO conta values (4, 'A', 'P', '2002.18')
+INSERT INTO colaborador values ('ARTHUR LUFT RIBEIRO', '038.558.680-93', 'arthurluftribeiro@gmail.com',
+'45999979955', 'M', '20051202', 'BRASIL')
