@@ -23,12 +23,12 @@ class User(Login):
         self.group_or_contact = '' #who it will be sended
         # -------------------
 
-        input('Press any key after scanning QR Code ')
+        input('Press any key after scanning QR Code')
         self.user_page()
 
     def user_page(self):
         #open contact who will be messaged
-        self.user = self.driver.find_element(By.XPATH, f'//span[@title = "{self.group_or_contact}"]').click()
+        self.user = WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.XPATH ,f'//span[@title = "{self.group_or_contact}"]'))).click()
         self.msg()
     
     def msg(self):
