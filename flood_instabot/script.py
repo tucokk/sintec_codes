@@ -28,12 +28,12 @@ class Login:
             #insert login strings
             self.login_btn = WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.NAME ,'username')))
             #seu login no instagram
-            self.login_btn.send_keys('')
+            self.login_btn.send_keys('tucokk')
 
             #insert psw strings
             self.psw_btn = WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.NAME ,'password')))
             #sua senha no instagram
-            self.psw_btn.send_keys('')
+            self.psw_btn.send_keys('arthur05')
 
             #login button
             self.submit = WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.TAG_NAME ,'form'))).click()
@@ -62,7 +62,7 @@ class Login:
             Login.res = True
 
         # uncomment it to use instagram login V 
-        #instagram()
+        instagram()
         # uncomment it to use facebook login V
         #facebook()
             
@@ -78,7 +78,7 @@ class User(Login):
         #open user page
         self.search = WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.XPATH ,'//*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/input')))
         #user @ 
-        self.search.send_keys('')
+        self.search.send_keys('murilo_lribeiro')
         self.search_result = WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.XPATH ,'//*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/div[3]/div/div[2]/div/div[1]/a'))).click()
         User.res = True
 
@@ -100,8 +100,8 @@ class SendMessage(User):
             self.not_now = WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.XPATH ,'/html/body/div[6]/div/div/div/div[3]/button[2]'))).click()
 
         #sending message
-        self.msg = 'teste'
-        self.qntmsg = 30
+        self.msg = 'programei uma coisa legal aqui tambem'
+        self.qntmsg = 10
 
         for i in range(self.qntmsg):
             self.msgarea = WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.XPATH ,'//*[@id="react-root"]/section/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div/div/div[2]/textarea')))
@@ -109,6 +109,8 @@ class SendMessage(User):
             self.msgarea.send_keys(Keys.ENTER)
             #speed message
             time.sleep(0.5)
+        self.msgarea.send_keys('sended by instatucobot')
+        self.msgarea.send_keys(Keys.ENTER)
 
 login = Login()
 user = User()
