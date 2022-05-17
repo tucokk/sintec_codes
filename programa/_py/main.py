@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
 from tkinter import messagebox
-from ttkwidgets.autocomplete import AutocompleteEntry
 
 class App(ttk.Frame):
     def __init__(self, parent):
@@ -11,15 +10,15 @@ class App(ttk.Frame):
         self.roots = list()
 
         # Load Images
-        self.new_user_img = tk.PhotoImage(file='./_img/novo_usuario.png')
-        self.info_user_img = tk.PhotoImage(file='./_img/info_usuario.png')
-        self.config_img = tk.PhotoImage(file='./_img/config.png')
-        self.database_img = tk.PhotoImage(file='./_img/banco_de_dados.png')
-        self.export_success = tk.PhotoImage(file='./_img/exportS.png')
-        self.export_fail = tk.PhotoImage(file='./_img/exportF.png')
+        self.new_user_img = tk.PhotoImage(file=r'C:\Users\Usuario\Documents\GitHub\sintec_codes\programa\_img\novo_usuario.png')
+        self.info_user_img = tk.PhotoImage(file=r'C:\Users\Usuario\Documents\GitHub\sintec_codes\programa\_img\info_usuario.png')
+        self.config_img = tk.PhotoImage(file=r'C:\Users\Usuario\Documents\GitHub\sintec_codes\programa\_img\config.png')
+        self.database_img = tk.PhotoImage(file=r'C:\Users\Usuario\Documents\GitHub\sintec_codes\programa\_img\banco_de_dados.png')
+        self.export_success = tk.PhotoImage(file=r'C:\Users\Usuario\Documents\GitHub\sintec_codes\programa\_img\exportS.png')
+        self.export_fail = tk.PhotoImage(file=r'C:\Users\Usuario\Documents\GitHub\sintec_codes\programa\_img\exportF.png')
 
         # Create control variables
-        self.export_status = True
+        self.export_status = False
         self.version = 'Beta 1.02'
         self.counter_checkboxes = 0
         self.value_1 = ''
@@ -43,9 +42,7 @@ class App(ttk.Frame):
     def setup_widgets(self):
         # Create a Frame for the Buttons
         self.options_frame = ttk.Frame(self, padding=(20, 10))
-        self.options_frame.grid(
-            row=0, column=0, padx=(20, 20), pady=(20, 10)
-        )
+        self.options_frame.pack(pady = 50)
 
         # Create a Frame for the New User Button
         self.new_user_frame = ttk.LabelFrame(self.options_frame, text="New User", padding=(10))
@@ -182,9 +179,7 @@ class App(ttk.Frame):
             
         #Create Main frame
         self.user_info_main_frame = ttk.Frame(self)
-        self.user_info_main_frame.grid(
-            row=0, column=0
-        )
+        self.user_info_main_frame.pack(pady = 50)
         self.roots.append(self.user_info_main_frame)
         # Create a Frame for the Header 
         self.user_header_frame = ttk.Frame(self.user_info_main_frame, padding=(20, 10))
@@ -337,9 +332,7 @@ class App(ttk.Frame):
     def sub_user_info_page(self):
         #Create Main frame
         self.sub_user_info_main_frame = ttk.Frame(self)
-        self.sub_user_info_main_frame.grid(
-            row=0, column=0
-        )
+        self.sub_user_info_main_frame.pack(pady = 50)
         self.roots.append(self.sub_user_info_main_frame)
         # Create a Frame for the Header 
         self.sub_user_header_frame = ttk.Frame(self.sub_user_info_main_frame, padding=(20, 10))
@@ -582,9 +575,7 @@ class App(ttk.Frame):
     def user_info_export(self):
         #Create Main frame
         self.export_info_main_frame = ttk.Frame(self)
-        self.export_info_main_frame.grid(
-            row=0, column=0
-        )
+        self.export_info_main_frame.pack(pady = 50)
         self.roots.append(self.export_info_main_frame)
 
         # Main Label
@@ -607,20 +598,16 @@ class App(ttk.Frame):
 if __name__ == "__main__":
     root = tk.Tk()
     root.title('Database')
-    root.resizable(0, 0)
     
     # Simply set the theme
-    root.tk.call("source", r"C:\Users\arthu\Desktop\programa\Azure-ttk-theme-main\azure.tcl")
+    root.tk.call("source", r"C:\Users\Usuario\Documents\GitHub\sintec_codes\programa\Azure-ttk-theme-main\azure.tcl")
     root.tk.call("set_theme", "dark")
 
     app = App(root)
     app.pack(fill="both", expand=True)
 
     # Set a minsize for the window, and place it in the middle
-    root.update()
-    root.minsize(root.winfo_width(), root.winfo_height())
-    x_cordinate = int((root.winfo_screenwidth() / 2) - (root.winfo_width() / 2))
-    y_cordinate = int((root.winfo_screenheight() / 2) - (root.winfo_height() / 2))
-    root.geometry("+{}+{}".format(x_cordinate, y_cordinate))
+    root.geometry("2100x900")
+    root.state('zoomed')
 
     root.mainloop()
