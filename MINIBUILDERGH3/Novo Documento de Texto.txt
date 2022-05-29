@@ -1,0 +1,158 @@
+[ImageReplacement]
+{
+	/images/loadingscreens/boot_legal.img.ps2=boot.png
+	/images/loadingscreens/boot_legal_b.img.ps2=boot.png
+	/images/loadingscreens/boot_legal_f.img.ps2=boot.png
+	/images/loadingscreens/boot_legal_g.img.ps2=boot.png
+	/images/loadingscreens/boot_legal_i.img.ps2=boot.png
+	/images/loadingscreens/boot_legal_s.img.ps2=boot.png
+
+	/images/loadingscreens/loading_background.img.ps2=loading2.png
+	/images/loadingscreens/loading_skull_soldier_animation1.img.ps2=gif1.png
+	/images/loadingscreens/loading_skull_soldier_animation2.img.ps2=gif2.png
+	/images/loadingscreens/loading_skull_soldier_animation3.img.ps2=gif3.png
+	/images/loadingscreens/loading_skull_soldier_animation4.img.ps2=gif4.png
+	/images/loadingscreens/loading_skull_soldier_animation5.img.ps2=gif5.png
+	/images/loadingscreens/loading_skull_soldier_animation6.img.ps2=gif6.png
+	/images/loadingscreens/loading_text.img.ps2=ca.png
+	/pak/loading_screen/loading_screen.pak.ps2/unknown/F4A4560A.img=ca.png
+	/pak/loading_screen/loading_screen.pak.ps2/unknown/B72A0F61.img=loading2.png
+	/pak/flow_state/bootup_press_any_button_fs/bootup_press_any_button_fs.pak.ps2/unknown/19E47B3B.img=loading1.png
+
+	/images/logo_gh3_lor_128x128.img.ps2=logo1.png
+	/images/logo_gh3_lor_256.img.ps2=logo2.png
+
+	/images/menuscreens/boot_copyright_bg_(no_type).img.ps2=loading1.png
+	/images/menuscreens/boot_brick_textbox.img.ps2=memory.png
+	/images/menuscreens/main_menu/menu_main_bg.img.ps2=menu1.png
+	/images/menuscreens/main_menu/menu_main_illustrations.img.ps2=menu2.png	
+	/pak/flow_state/main_menu_fs/main_menu_fs.pak.ps2/unknown/9AB2C5F2.img=menu1.png
+	/pak/flow_state/main_menu_fs/main_menu_fs.pak.ps2/unknown/E8054A04.img=menu1.png
+	/pak/flow_state/main_menu_fs/main_menu_fs.pak.ps2/unknown/F4E50517.img=menu1.png
+
+	/images/menuscreens/setlist/setlist_button_gunsnroses.img.ps2=guns.png
+	/pak/flow_state/options_toprockers_setlist_fs/options_toprockers_setlist_fs.pak.ps2/unknown/119AAD82.img=guns.png
+	/pak/flow_state/options_toprockers_setlist_fs/options_toprockers_setlist_fs.pak.ps2/unknown/3A4A769D.img=guns.png
+	/pak/flow_state/options_toprockers_setlist_fs/options_toprockers_setlist_fs.pak.ps2/unknown/D25D508D.img=guns.png
+	/pak/flow_state/options_toprockers_setlist_fs/options_toprockers_setlist_fs.pak.ps2/unknown/B0C88183.img=guns.png
+	/pak/flow_state/options_toprockers_setlist_fs/options_toprockers_setlist_fs.pak.ps2/unknown/D4B486D5.img=guns.png
+	/pak/flow_state/options_toprockers_setlist_fs/options_toprockers_setlist_fs.pak.ps2/unknown/DF4E77C3.img=guns.png
+	/pak/flow_state/options_toprockers_setlist_fs/options_toprockers_setlist_fs.pak.ps2/unknown/17B13DAB.img=guns.png
+	/pak/flow_state/practice_setlist_fs/practice_setlist_fs.pak.ps2/unknown/BC2F41BF.img=guns.png
+	/pak/flow_state/practice_setlist_fs/practice_setlist_fs.pak.ps2/unknown/3A4A769D.img=guns.png
+	/pak/flow_state/practice_setlist_fs/practice_setlist_fs.pak.ps2/unknown/119AAD82.img=guns.png
+	/pak/flow_state/practice_setlist_fs/practice_setlist_fs.pak.ps2/unknown/C3210DFB.img=guns.png
+	/pak/flow_state/practice_setlist_fs/practice_setlist_fs.pak.ps2/unknown/FBBD54E9.img=guns.png
+	/pak/flow_state/practice_setlist_fs/practice_setlist_fs.pak.ps2/unknown/D25D508D.img=guns.png
+	/pak/flow_state/practice_setlist_fs/practice_setlist_fs.pak.ps2/unknown/D4B486D5.img=guns.png
+	/pak/flow_state/practice_setlist_fs/practice_setlist_fs.pak.ps2/unknown/17B13DAB.img=guns.png
+	/pak/flow_state/practice_setlist_fs/practice_setlist_fs.pak.ps2/unknown/B0C88183.img=guns.png
+	/pak/flow_state/quickplay_setlist_fs/quickplay_setlist_fs.pak.ps2/unknown/119AAD82.img=guns.png
+	/pak/flow_state/quickplay_setlist_fs/quickplay_setlist_fs.pak.ps2/unknown/BC2F41BF.img=guns.png
+	/pak/flow_state/quickplay_setlist_fs/quickplay_setlist_fs.pak.ps2/unknown/3A4A769D.img=guns.png
+	/pak/flow_state/quickplay_setlist_fs/quickplay_setlist_fs.pak.ps2/unknown/D4B486D5.img=guns.png
+	/pak/flow_state/quickplay_setlist_fs/quickplay_setlist_fs.pak.ps2/unknown/DF4E77C3.img=guns.png
+	/pak/flow_state/quickplay_setlist_fs/quickplay_setlist_fs.pak.ps2/unknown/FBBD54E9.img=guns.png
+	/pak/flow_state/quickplay_setlist_fs/quickplay_setlist_fs.pak.ps2/unknown/17B13DAB.img=guns.png
+	/pak/flow_state/quickplay_setlist_fs/quickplay_setlist_fs.pak.ps2/unknown/D25D508D.img=guns.png
+	/pak/flow_state/quickplay_setlist_fs/quickplay_setlist_fs.pak.ps2/unknown/B0C88183.img=guns.png
+	/pak/flow_state/quickplay_setlist_fs/quickplay_setlist_fs.pak.ps2/unknown/C3210DFB.img=guns.png
+	/pak/flow_state/career_setlist_fs/career_setlist_fs.pak.ps2/unknown/119AAD82.img=guns.png
+	/pak/flow_state/career_setlist_fs/career_setlist_fs.pak.ps2/unknown/BC2F41BF.img=guns.png
+	/pak/flow_state/career_setlist_fs/career_setlist_fs.pak.ps2/unknown/3A4A769D.img=guns.png
+	/pak/flow_state/career_setlist_fs/career_setlist_fs.pak.ps2/unknown/C3210DFB.img=guns.png
+	/pak/flow_state/career_setlist_fs/career_setlist_fs.pak.ps2/unknown/FBBD54E9.img=guns.png
+	/pak/flow_state/career_setlist_fs/career_setlist_fs.pak.ps2/unknown/17B13DAB.img=guns.png
+	/pak/flow_state/career_setlist_fs/career_setlist_fs.pak.ps2/unknown/DF4E77C3.img=guns.png
+	/pak/flow_state/career_setlist_fs/career_setlist_fs.pak.ps2/unknown/D4B486D5.img=guns.png
+	/pak/flow_state/career_setlist_fs/career_setlist_fs.pak.ps2/unknown/D25D508D.img=guns.png
+	/pak/flow_state/career_setlist_fs/career_setlist_fs.pak.ps2/unknown/B0C88183.img=guns.png
+	/pak/flow_state/coop_career_setlist_fs/coop_career_setlist_fs.pak.ps2/unknown/119AAD82.img=guns.png
+	/pak/flow_state/mp_faceoff_setlist_fs/mp_faceoff_setlist_fs.pak.ps2/unknown/119AAD82.img=guns.png
+	/pak/flow_state/practice_setlist_fs/practice_setlist_fs.pak.ps2/unknown/119AAD82.img=guns.png
+	
+	/images/menuscreens/setlist/setlist_bg_head_676.img.ps2=tijo.png
+	/images/menuscreens/setlist/setlist_bg_loop_1308.img.ps2=tijo.png
+	/pak/flow_state/options_toprockers_setlist_fs/options_toprockers_setlist_fs.pak.ps2/unknown/42E46C33.img=tijo.png
+	/pak/flow_state/options_toprockers_setlist_fs/options_toprockers_setlist_fs.pak.ps2/unknown/44488741.img=tijo.png
+	/pak/flow_state/quickplay_setlist_fs/quickplay_setlist_fs.pak.ps2/unknown/44488741.img=tijo.png
+	/pak/flow_state/quickplay_setlist_fs/quickplay_setlist_fs.pak.ps2/unknown/42E46C33.img=tijo.png
+	/pak/flow_state/career_setlist_fs/career_setlist_fs.pak.ps2/unknown/42E46C33.img=tijo.png
+	/pak/flow_state/career_setlist_fs/career_setlist_fs.pak.ps2/unknown/44488741.img=tijo.png
+	/pak/flow_state/practice_setlist_fs/practice_setlist_fs.pak.ps2/unknown/42E46C33.img=tijo.png
+	/pak/flow_state/practice_setlist_fs/practice_setlist_fs.pak.ps2/unknown/44488741.img=tijo.png
+
+	/images/menuscreens/difficulty2p/1p_difficulty_poster.img.ps2=difi.png
+	/images/menuscreens/difficulty2p/2p_difficulty_poster.img.ps2=difi.png
+	/pak/flow_state/career_select_difficulty_fs/career_select_difficulty_fs.pak.ps2/unknown/7E3A69BF.img=difi.png
+	/pak/flow_state/coop_career_select_difficulty_fs/coop_career_select_difficulty_fs.pak.ps2/unknown/399A136F.img=difi.png
+	/pak/flow_state/mp_faceoff_select_difficulty_fs/mp_faceoff_select_difficulty_fs.pak.ps2/unknown/7E3A69BF.img=difi.png
+	/pak/flow_state/mp_faceoff_select_difficulty_fs/mp_faceoff_select_difficulty_fs.pak.ps2/unknown/399A136F.img=difi.png
+	/pak/flow_state/options_top_rockers_difficulty_select_fs/options_top_rockers_difficulty_select_fs.pak.ps2/unknown/7E3A69BF.img=difi.png
+	/pak/flow_state/practice_select_difficulty_fs/practice_select_difficulty_fs.pak.ps2/unknown/7E3A69BF.img=difi.png
+	/pak/flow_state/quickplay_select_difficulty_fs/quickplay_select_difficulty_fs.pak.ps2/unknown/7E3A69BF.img=difi.png
+
+	/pak/flow_state/main_menu_fs/main_menu_fs.pak.ps2/unknown/AC82272B.img=transparente1.png
+	/pak/flow_state/main_menu_fs/main_menu_fs.pak.ps2/unknown/568D1A48.img=transparente1.png
+	/pak/flow_state/main_menu_fs/main_menu_fs.pak.ps2/unknown/49D95BD1.img=transparente1.png
+	/pak/flow_state/main_menu_fs/main_menu_fs.pak.ps2/unknown/B01A92FC.img=transparente1.png
+	/pak/flow_state/main_menu_fs/main_menu_fs.pak.ps2/unknown/4A15AF9F.img=transparente1.png
+	
+	
+	/pak/flow_state/ps2_480p_warning_fs/ps2_480p_warning_fs.pak.ps2/unknown/BDA79D97.img=memory.png
+	/pak/flow_state/ps2_memcard_autosave_warning_boot_fs/ps2_memcard_autosave_warning_boot_fs.pak.ps2/unknown/BDA79D97.img=memory.png
+	/pak/flow_state/ps2_480p_warning_fs/ps2_480p_warning_fs.pak.ps2/unknown/BDA79D97.img=memory.png
+	/pak/flow_state/ps2_memcard_save_check_status_ingame_fs/ps2_memcard_save_check_status_ingame_fs.pak.ps2/unknown/BDA79D97.img=memory.png
+	/pak/flow_state/ps2_memcard_autosave_warning_boot_fs/ps2_memcard_autosave_warning_boot_fs.pak.ps2/unknown/BDA79D97.img=memory.png
+	/pak/flow_state/ps2_now_in_480p_fs/ps2_now_in_480p_fs.pak.ps2/unknown/BDA79D97.img=memory.png
+	/pak/flow_state/ps2_memcard_load_lose_progress_ingame_fs/ps2_memcard_load_lose_progress_ingame_fs.pak.ps2/unknown/BDA79D97.img=memory.png
+	/pak/flow_state/ps2_memcard_overwrite_warning_ingame_fs/ps2_memcard_overwrite_warning_ingame_fs.pak.ps2/unknown/BDA79D97.img=memory.png
+	
+	
+	
+	
+}
+
+[LoadingScreenTexts]
+{
+        1 = Siga-nos no twitter! @ghbrazucas.
+        2 = Jogo desenvolvido por @tucokkk.
+        3 = Parceria no design com @Mulirokjkk.
+        4 = Algumas musicas nao foram feitas pelos desenvolvedores. Os creditos estao disponiveis na tela de carregamento. Agradecemos imensamente a naonemeu.
+        5 = Jogo desenvolvido utilizando o minibuildgh3.
+        6 = Para contato, use a DM: @gbrazucas.
+        7 = Compartilhe suas sugestoes!
+        8 = Este jogo esta disponivel GRATUITAMENTE na pagina oficial @ghbrazucas. Caso encontre alguem o comercializando em forma digital, avise-nos.
+        9 = Os direitos autorais das musicas utilizadas pertencem aos seus respectivos criadores.
+        10 = O Guitar Hero Brazucas 4 eh uma homenagem a trilogia Guitar Hero Brazucas, criada por Sub Zero e Dark Shadow.
+        11 = Musicas variadas estao disponiveis na aba BONUS.
+        12 = Siga-nos no twitter! @ghbrazucas.
+        13 = Jogo desenvolvido por @tucokkk.
+        14 = Parceria no design com @Mulirokjkk.
+        15 = Algumas musicas nao foram feitas pelos desenvolvedores. Os creditos estao disponiveis na tela de carregamento. Agradecemos imensamente a naonemeu.
+        16 = Jogo desenvolvido utilizando o minibuildgh3.
+        17 = Para contato, use a DM: @gbrazucas.
+        18 = Compartilhe suas sugestoes!
+        19 = Este jogo esta disponivel GRATUITAMENTE na pagina oficial @ghbrazucas. Caso encontre alguem o comercializando em forma digital, avise-nos.
+        20 = Os direitos autorais das musicas utilizadas pertencem aos seus respectivos criadores.
+        21 = O Guitar Hero Brazucas 4 eh uma homenagem a trilogia Guitar Hero Brazucas, criada por Sub Zero e Dark Shadow.
+        22 = Musicas variadas estao disponiveis na aba BONUS.
+        23 = Siga-nos no twitter! @ghbrazucas.
+        24 = Jogo desenvolvido por @tucokkk.
+        25 = Parceria no design com @Mulirokjkk.
+        26 = Algumas musicas nao foram feitas pelos desenvolvedores. Os creditos estao disponiveis na tela de carregamento. Agradecemos imensamente a naonemeu.
+        27 = Jogo desenvolvido utilizando o minibuildgh3.
+        28 = Para contato, use a DM: @gbrazucas.
+        29 = Compartilhe suas sugestoes!
+        30 = Este jogo esta disponivel GRATUITAMENTE na pagina oficial @ghbrazucas. Caso encontre alguem o comercializando em forma digital, avise-nos.
+        31 = Os direitos autorais das musicas utilizadas pertencem aos seus respectivos criadores.
+        32 = O Guitar Hero Brazucas 4 eh uma homenagem a trilogia Guitar Hero Brazucas, criada por Sub Zero e Dark Shadow.
+        33 = Musicas variadas estao disponiveis na aba BONUS.
+        34 = Jogo desenvolvido por @tucokkk.
+        35 = Parceria no design com @Mulirokjkk.
+        36 = Algumas musicas nao foram feitas pelos desenvolvedores. Os creditos estao disponiveis na tela de carregamento. Agradecemos imensamente a naonemeu.
+        37 = Este jogo esta disponivel GRATUITAMENTE na pagina oficial @ghbrazucas. Caso encontre alguem o comercializando em forma digital, avise-nos.
+}
+
+
+
